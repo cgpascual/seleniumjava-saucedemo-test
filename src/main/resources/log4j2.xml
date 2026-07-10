@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+
+    <Appenders>
+
+        <Console name="Console">
+
+            <PatternLayout pattern="%d [%t] %-5level %msg%n"/>
+
+        </Console>
+
+    </Appenders>
+
+
+    <Loggers>
+
+        <Root level="info">
+
+            <AppenderRef ref="Console"/>
+
+        </Root>
+
+    </Loggers>
+
+
+</Configuration>
