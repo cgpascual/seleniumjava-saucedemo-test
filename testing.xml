@@ -1,18 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="SauceDemo Suite">
-    <groups>
-        <run>
-            <include name="smoke"/>
-        </run>
-    </groups>
 
-    <test name="Smoke Tests">
+    <listeners>
+
+        <listener class-name="listeners.TestListener"/>
+
+    </listeners>
+
+    <test name="Regression">
+
         <classes>
+
             <class name="tests.LoginTests"/>
-            <class name="tests.InventoryTests"/>
+<!--            <class name="tests.InventoryTests"/>-->
+<!--            <class name="tests.CartTests"/>-->
+<!--            <class name="tests.CheckoutTests"/>-->
+<!--            <class name="tests.EndToEndTests"/>-->
+
         </classes>
+
     </test>
+
 </suite>
